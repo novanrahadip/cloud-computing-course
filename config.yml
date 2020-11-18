@@ -1,0 +1,16 @@
+title: Cloud Computing
+description: Penggunaan Git untuk memeunuhi tugas Mata Kuliah Cloud Computing PTI17
+template:
+  repo: cloud-computing-template
+  name: cloud-computing
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
